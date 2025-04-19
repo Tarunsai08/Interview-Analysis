@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Analysis Results</h1>
+    <h2>Transcribed Text</h2>
+    <p>{{ results['transcribed_text'] }}</p>
+
+    <h2>Sentiment Analysis</h2>
+    <p>Polarity: {{ results['sentiment']['polarity'] }}</p>
+    <p>Subjectivity: {{ results['sentiment']['subjectivity'] }}</p>
+    <p>Conclusion: {{ results['sentiment']['conclusion'] }}</p>
+
+    <h2>Filler Word Count</h2>
+    <p>{{ results['filler_word_count'] }}</p>
+
+    <h2>Keywords</h2>
+    <p>{{ results['keywords'] }}</p>
+
+    <h2>Quiet Gap Analysis</h2>
+    <p>Total Silence Duration: {{ results['quiet_gap_duration'] }} seconds</p>
+
+</body>
+</html>
